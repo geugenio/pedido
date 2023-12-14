@@ -1,0 +1,13 @@
+body {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+button {
+  padding: 10px;
+  font-size: 16px;
+}
+#botaoNao {
+  position: absolute;
+}
