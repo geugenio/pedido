@@ -3,6 +3,8 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
 button {
   padding: 10px;
@@ -10,4 +12,75 @@ button {
 }
 #botaoNao {
   position: absolute;
+}
+button {
+  background-color: #23c559;
+  color: #fff;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  justify-content: space-between;
+  margin: 1em;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #50da50;
+}
+h1 {
+  background-color: #88ff88;
+  padding: 15px;
+  border-radius: 20px;
+}
+h3 {
+  font-weight: normal;
+  font-size: 10px;
+}
+
+#botaoSim,
+#botaoNao {
+  margin-top: 20px;
+}
+
+h2 {
+  animation: pulse 0.5s infinite, flash 1s infinite;
+  size: 20px;
+  font-size: 3em;
+  display: inline-block;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #abffb0;
+  padding: 10px;
+  border-top: 1px solid #8aca60;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes flash {
+  0% {
+    color: #ff0000; /* Vermelho */
+  }
+  33% {
+    color: #00ff00; /* Verde */
+  }
+  66% {
+    color: #0000ff; /* Azul */
+  }
+  100% {
+    color: #ff0000; /* Vermelho */
+  }
 }
